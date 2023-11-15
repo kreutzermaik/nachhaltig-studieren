@@ -1,0 +1,52 @@
+---
+import Card from "./Card.astro";
+---
+<main class="content">
+    <h1>🎓🌱 Studiengänge mit Fokus auf Nachhaltigkeit</h1>
+    <div class="cards">
+        <Card
+                title="Kommunikationspsychologie und Nachhaltigkeit (B.Sc.)"
+                desc="Beschreibung folgt..."
+                image="/kommunikationspsychologie.jpg"
+        />
+
+        <Card
+                title="Umwelt- und Wirtschaftsinformatik (B.Sc.)"
+                desc="Du möchtest im spannenden und vielfältigen Themenfeld zwischen Informatik, Wirtschaft- und Umweltwissenschaften arbeiten? Dann studiere Umwelt- und Wirtschaftsinformatik."
+                image="/umwelt-wirtschaftsinformatik.jpg"
+                link="https://www.umwelt-campus.de/studium/studienangebot-weiterbildung/bachelor/umwelt-und-wirtschaftsinformatik-bsc"
+        />
+
+        <Card
+                title="Erneuerbare Energien (B.Sc.)"
+                desc="Wir bilden Menschen aus, die auf der Basis eines interdisziplinär geprägten Denkens die Industrie und den Energiesektor im Sinne einer nachhaltigen Entwicklung weiterentwickeln."
+                image="/erneuerbare-energien.jpg"
+                link="https://www.umwelt-campus.de/erneuerbare-energien"
+        />
+
+        <Card
+                title="Wirtschaftsingenieurwesen / Umweltplanung (B.Sc.)"
+                desc="Umwelt ist nicht alles - aber ohhne Umwelt ist alles nichts! Die Umweltverträglichkeit entscheidet heute über den langfristigen Erfolg."
+                image="/wirtschaftsingenieurwesen.jpg"
+                link="https://www.umwelt-campus.de/studium/studienangebot-weiterbildung/bachelor/wirtschaftsingenieurwesen-umweltplanung-bsc"
+        />
+    </div>
+</main>
+
+<style>
+    .content {
+        background: linear-gradient(var(--gray-gradient)) no-repeat;
+        color: #222939;
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        gap: 3em;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2em 0;
+    }
+</style>

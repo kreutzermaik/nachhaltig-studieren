@@ -1,0 +1,23 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+    <p>© {year} nachhaltig-studieren.de</p>
+    <p class="secondary-text">Datenschutzerklärung & Impressum</p>
+</footer>
+
+<style>
+    footer {
+        padding: 2em 1em;
+        text-align: center;
+        background: linear-gradient(var(--gray-gradient)) no-repeat;
+        color: rgb(var(--gray));
+        margin-bottom: 4em;
+        font-size: 20px;
+    }
+
+    .secondary-text {
+        font-size: initial;
+    }
+</style>

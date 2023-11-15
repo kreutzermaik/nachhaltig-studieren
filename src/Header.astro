@@ -1,0 +1,57 @@
+<header>
+    <div id="logo-container">
+        <a href="https://www.umwelt-campus.de/"><img id="logo" src="/logo.svg" width="300" alt="Umwelt-Campus Birkenfeld"/></a>
+        <h4>Umwelt-Campus Birkenfeld</h4>
+    </div>
+    <h2>Nachhaltig studieren</h2>
+    <div id="call-to-action"></div>
+</header>
+
+<style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        color: #222939;
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    }
+
+    #logo-container, #call-to-action {
+        flex: 1;
+        text-align: left;
+    }
+
+    #logo-container h4 {
+        display: none;
+    }
+
+    h2 {
+        flex: 2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 700px) {
+        #call-to-action {
+            display: none;
+        }
+
+        #logo-container {
+            color: #298836;
+            line-height: 125%;
+        }
+
+        #logo-container h4 {
+            display: block;
+        }
+
+        #logo {
+            display: none;
+        }
+    }
+</style>
