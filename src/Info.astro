@@ -1,0 +1,73 @@
+---
+const {title, text, image} = Astro.props;
+---
+
+<div class="info">
+    <img src={image} alt={title}/>
+    <div class="info-details">
+        <h2 class="title">🏆 {title}</h2>
+        <p class="text">
+            {text}
+        </p>
+        <button><a
+                href="https://www.umwelt-campus.de/campus/aktuelles/medien-presse/pressemitteilungen/platz-3-im-weltweiten-nachhaltigkeitsranking">
+            Mehr erfahren</a>
+        </button>
+    </div>
+</div>
+
+<style>
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1490px;
+        margin: 2em auto;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .info-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    img {
+        max-width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .title, .text {
+        text-align: left;
+        margin: 0;
+    }
+
+    .text {
+        color: rgb(var(--gray));
+        line-height: 125%;
+        margin-top: 1.5em;
+    }
+
+    @media (min-width: 1000px) {
+        .info {
+            flex-direction: row;
+        }
+
+        img {
+            max-width: 50%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 12px;
+        }
+
+        .title {
+            margin: 0.5em;
+        }
+
+        .text {
+            margin: 1em;
+        }
+    }
+</style>

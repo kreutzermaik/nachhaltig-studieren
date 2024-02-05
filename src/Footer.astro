@@ -3,8 +3,8 @@ const year = new Date().getFullYear();
 ---
 
 <footer>
-    <p>© {year} nachhaltig-studieren.vercel.app</p>
-    <p class="secondary-text">Datenschutzerklärung & Impressum</p>
+    <p>© {year} nachhaltigkeit-studium.de</p>
+    <p class="secondary-text"><a href="/datenschutz">Datenschutzerklärung</a> & <a href="/impressum">Impressum</a></p>
 </footer>
 
 <style>
@@ -19,5 +19,9 @@ const year = new Date().getFullYear();
 
     .secondary-text {
         font-size: initial;
+    }
+
+    a {
+        color: rgb(var(--gray));
     }
 </style>

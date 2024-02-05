@@ -1,8 +1,9 @@
 ---
 import Card from "./Card.astro";
+import Info from "./Info.astro";
 ---
 <main class="content">
-    <h1>🎓🌱 Studiengänge mit Fokus auf Nachhaltigkeit</h1>
+    <h1>🎓🌱 Studiengänge mit besonderem Fokus auf Nachhaltigkeit</h1>
     <div class="cards">
         <Card
                 title="Kommunikationspsychologie und Nachhaltigkeit (B.Sc.)"
@@ -26,11 +27,34 @@ import Card from "./Card.astro";
 
         <Card
                 title="Wirtschaftsingenieurwesen / Umweltplanung (B.Sc.)"
-                desc="Umwelt ist nicht alles - aber ohhne Umwelt ist alles nichts! Die Umweltverträglichkeit entscheidet heute über den langfristigen Erfolg."
+                desc="Umwelt ist nicht alles - aber ohne Umwelt ist alles nichts! Die Umweltverträglichkeit entscheidet heute über den langfristigen Erfolg."
                 image="/wirtschaftsingenieurwesen.jpg"
                 link="https://www.umwelt-campus.de/studium/studienangebot-weiterbildung/bachelor/wirtschaftsingenieurwesen-umweltplanung-bsc"
         />
+
+        <Card
+                title="Nonprofit und NGO-Management (B.A.)"
+                desc="Das Gemeinwohl steht im Fokus - Eine solide betriebswirtschaftliche und juristische Ausbildung und die erforderlichen fachübergreifenden Kenntnisse im Bereich Nonprofit und NGO-Management."
+                image="/ngo.jpg"
+                link="https://www.umwelt-campus.de/studium/studienangebot-weiterbildung/bachelor/non-profit"
+        />
+
+        <Card
+                title="Nachhaltige Betriebswirtschaft (B.A.)"
+                desc="Das Studium vermittelt fachliche und fachübergreifende Kenntnisse, Fähigkeiten und Methoden der Betriebswirtschaftslehre, zusammen mit den Aspekten der Nachhaltigkeit."
+                image="/nachhaltige-bwl.jpg"
+                link="https://www.umwelt-campus.de/studium/studienangebot-weiterbildung/bachelor/nachhaltige-betriebswirtschaft-ba"
+        />
+
     </div>
+
+    <button><a href="https://www.umwelt-campus.de/studium/studienangebot-weiterbildung">Weitere Studiengänge</a></button>
+
+    <Info
+            title="Green-Metric Ranking"
+            text="Der Umwelt-Campus zählt zu den grünsten Hochschulen der Welt. Für uns ist Nachhaltigkeit mehr als ein Schlagwort. Umweltschutz ist für uns schon immer eine Herzensangelegenheit. Im Green-Metric Ranking sind wir international auf Platz 3 und in Deutschland die Nummer 1 in Sachen Nachhaltigkeit."
+            image="/green-metric.png"
+    />
 </main>
 
 <style>
